@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="movie.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+        </script>
+
+    </head>
+
+    <!--Main body starting with a header and ending with a footer.-->
+
+    <body>
+        <header>
+            <h1>Movie Library</h1>
+            <nav>
+                <a href="movie_home.html">Home</a>
+                <a href="favorites.html">Favorites</a>
+            </nav>
+        </header>
+
+        <label for="searchTerm">Search...</label>
+        <input type="text" id="searchTerm">
+        <button id="btnSearch" type="button">Search</button>
+
+        <hr>
+
+        <label for="pageSelect">Page:</label>
+        <select id="pageSelect"></select>
+
+        <div id="results"></div>
+
+        <footer>
+            <p>Fall 2026 Group Project: IT 4403 W01, Group 14</p>
+        </footer>
+    </body>
+
+</html>
