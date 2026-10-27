@@ -1,3 +1,16 @@
 h1 {
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card {
+    width: 500px;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 12px;
 }
