@@ -15,6 +15,7 @@
 
     <body>
         <script></script>
+        <!--Navigation bar-->
         <header>
             <h1>Movie Library</h1>
             <nav>
@@ -22,17 +23,43 @@
                 <a href="favorites.html">Favorites</a>
             </nav>
         </header>
-
+<!--Search button-->
         <label for="searchTerm">Search...</label>
         <input type="text" id="searchTerm">
         <button id="btnSearch" type="button">Search</button>
 
-        <hr>
 
         <label for="pageSelect">Page:</label>
         <select id="pageSelect"></select>
 
         <div id="results"></div>
+
+        <script>
+            const api_key = ;
+            const FIELDS = 
+
+            let searchCount = 0;
+
+            $(document).ready(function () {
+                $('#search-form').on('submit', function (event) {
+                    event.preventDefault();
+                    const query = $('#search-input').val().trim();
+                    if (query) {
+                        searchBooks(query);
+                    }
+                });
+            });
+
+            //Pagination
+            function buildPagination(numFound, currentPage) {
+                var totalPages = Math.min(maxPages, Math.ceil(numFound / pageSize));
+
+                $("#pagination").empty();
+                for (var i = 1; i <= totalPages; i++) {
+                    $("#pagination").append(
+            
+            
+        </script>
 
         <footer>
             <p>Fall 2026 Group Project: IT 4403 W01, Group 14</p>
